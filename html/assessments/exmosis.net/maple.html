@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maple</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="../../assets/style.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/pilcrow.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/hljs-github.min.css"/>
+  </head>
+<body><style>
+    table,
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+</style>
+
+<h1 id="maple"><a class="header-link" href="#maple"></a>Maple</h1>
+<p><em>An energy assessment by <a href="https://groundlake.org">Groundlake</a>.</em></p>
+<p><em>Date: July 2021</em></p>
+<h2 id="aims"><a class="header-link" href="#aims"></a>Aims</h2>
+<p>Maple is a single server that acts as a central point for running self-hosted personal network services.</p>
+<p>The aims of running the server are:</p>
+<ul class="list">
+<li>To control the hardware and software stack as much as possible, as an experiment in learning and understanding this stack.</li>
+<li>To provide a flexible piece of infrastructure that can have software installed and uninstalled without need for third party administrators or policies.</li>
+<li>To consider how self-hosting impacts both positively and negatively on hosters, administators and users.</li>
+<li>To allow cheap or free use of self-hosting software.</li>
+</ul>
+<h2 id="summary-of-suggested-actions"><a class="header-link" href="#summary-of-suggested-actions"></a>Summary of suggested actions</h2>
+<ul class="list">
+<li><p>Consider upgrading PHP to 7.4 for stable, or 8.0 for unstable</p>
+</li>
+<li><p>Consider automated upgrades to server software, and the following components:</p>
+</li>
+<li><p>6work.exmosis.net: </p>
+<ul class="list">
+<li>Wordpress major upgrades to core</li>
+<li>Auto-convert images to webp</li>
+<li>Install or change cache plugins to improve Lighthouse assessment</li>
+</ul>
+</li>
+<li><p>6wall.exmosis.net: wallabag upgrades to service code</p>
+</li>
+<li><p>6read.exmosis.net: ttrss upgrades to service code</p>
+</li>
+<li><p>Consider generating a static HTML version of 6work.exmosis.net?</p>
+</li>
+</ul>
+<h2 id="review-services-and-stack"><a class="header-link" href="#review-services-and-stack"></a>Review: Services and Stack</h2>
+<p>The Maple server is currently responsible for running the following services:</p>
+<ul class="list">
+<li>Self-host 6work.exmosis.net (<em>Wordpress</em>)<ul class="list">
+<li><em>Dependencies: PHP, nginx, MySQL, Let&#39;s Encrypt</em></li>
+</ul>
+</li>
+<li>Self-host 6read.exmosis.net (<em>ttrss</em>)<ul class="list">
+<li><em>Dependencies: PHP, nginx, MySQL, Let&#39;s Encrypt</em></li>
+</ul>
+</li>
+<li>Self-host 6wall.exmosis.net (<em>wallabag</em>)<ul class="list">
+<li><em>Dependencies: PHP, nginx, MySQL, Let&#39;s Encrypt</em></li>
+</ul>
+</li>
+<li>Central file synchronisation server for local network (<em>syncthing</em>)</li>
+<li>Publishing synchronised content to external website (<em>rsync</em>)</li>
+<li>Proxy point for synchronisation: diary, photos, markor, pad (<em>rsync</em>)</li>
+<li>Daily alert service for file change alerts (<em>custom: PHP</em>)</li>
+<li>Local file backup (<em>rsync</em>, <em>custom: bash</em>)</li>
+<li>Backup databases (<em>mysqldump</em>)</li>
+</ul>
+<p>Dependent services are:</p>
+<ul class="list">
+<li>PHP 7.3</li>
+<li>nginx 1.14.2</li>
+<li>Let&#39;s Encrypt</li>
+<li>MySQL: MariaDB 10.3.27</li>
+</ul>
+<p>Dependent operating system is:</p>
+<ul class="list">
+<li>Raspbian 10 (Buster)</li>
+</ul>
+<h2 id="review-manual-processes"><a class="header-link" href="#review-manual-processes"></a>Review: Manual Processes</h2>
+<h3 id="top-level-services"><a class="header-link" href="#top-level-services"></a>Top-level services</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Repeated Manual Processes</th>
+<th>Possible Improvement Impact</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Wordpress</td>
+<td>Major updates to core Wordpress (monthly, 20 mins)</td>
+<td>Low: Automate major upgrades to core</td>
+</tr>
+<tr>
+<td>ttrss</td>
+<td>Updates to service code (monthly, 30 mins)</td>
+<td></td>
+</tr>
+<tr>
+<td>wallabag</td>
+<td>Updates to service code (monthly, 30 mins)</td>
+<td></td>
+</tr>
+<tr>
+<td>syncthing</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>rsync</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mysqldump</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="custom-services"><a class="header-link" href="#custom-services"></a>Custom services</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Repeated Manual Processes</th>
+<th>Possible Improvement Impact</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Daily alert service: PHP</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Local file backup: bash</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="dependency-services"><a class="header-link" href="#dependency-services"></a>Dependency services</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Repeated Manual Processes</th>
+<th>Possible Improvement Impact</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PHP 7.3</td>
+<td></td>
+<td>Upgrade to PHP 7.4 for stable, 8.0 for unstable</td>
+</tr>
+<tr>
+<td>nginx 1.14.2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Let&#39;s Encrypt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MySQL: MariaDB 10.3.27</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="operating-system"><a class="header-link" href="#operating-system"></a>Operating system</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Repeated Manual Processes</th>
+<th>Possible Improvement Impact</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Software updates</td>
+<td>Updates applied</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="review-caching-and-optimisation"><a class="header-link" href="#review-caching-and-optimisation"></a>Review: Caching and optimisation</h2>
+<h3 id="wordpress"><a class="header-link" href="#wordpress"></a>Wordpress</h3>
+<ul class="list">
+<li>Caching plugin enabled: yes</li>
+<li><strong>Image optimisation plugin enabled: no:</strong> Install relevant plugin to reduce image sizes and transfer times</li>
+</ul>
+<h3 id="php"><a class="header-link" href="#php"></a>PHP</h3>
+<ul class="list">
+<li>OPCache enabled: yes</li>
+<li><strong>Latest version: no:</strong> Update to the latest version to benefit from optimisations</li>
+</ul>
+<h3 id="nginx"><a class="header-link" href="#nginx"></a>nginx</h3>
+<ul class="list">
+<li>gzip enabled: yes</li>
+</ul>
+<h3 id="mysql"><a class="header-link" href="#mysql"></a>MySQL</h3>
+<h2 id="review-energy-usage-and-efficiency"><a class="header-link" href="#review-energy-usage-and-efficiency"></a>Review: Energy usage and efficiency</h2>
+<p>This assessment uses a standard set of review metris to identify how the server uses energy:</p>
+<ul class="list">
+<li>Energy rates, measured in Watts (W) and kiloWatts (kW)</li>
+<li>Energy usage, measured in kiloWatt-hours (kWh)</li>
+<li>Data sizes, measured in kilobytes (kb), megabytes (mb) and upwards</li>
+<li>CPU usage: server load</li>
+</ul>
+<p>As standard, we measure usage across different contexts relating to the services above:</p>
+<ul class="list">
+<li>Hardware: Overall energy used by the server hardware directly.</li>
+<li>Software: If possible, how energy is split between services and used by custom code.</li>
+<li>Client: Page weight, data transferred, and distance travelled. CPU intensity.</li>
+</ul>
+<p>As energy usage varies widely across time and activity, this assessment aims to triangulate a generally accurate sense of usage through a variety of means.</p>
+<h3 id="hardware-and-system"><a class="header-link" href="#hardware-and-system"></a>Hardware and system</h3>
+<p>The Maple server runs on a <strong>Raspberry Pi Model B (+?)</strong>.</p>
+<p>Energy measurement method:</p>
+<ul class="list">
+<li><p>Software: powerstat, powertop</p>
+</li>
+<li><p>USB meter (whole hardware system)</p>
+</li>
+<li><p>Energy rate on idle: xW</p>
+</li>
+<li><p>Energy rate under stress: xW</p>
+</li>
+</ul>
+<p>Duration-based samples used in assessment: Single day, single week. We suggest a monthly assessment is also appropriate, especically given monthly manual processes identified for services, above.</p>
+<ul class="list">
+<li>Energy used on sample day 1: kWh</li>
+<li>Average daily energy use during sample week 1: xkWh (total xkWh / 7)</li>
+</ul>
+<p>System load:</p>
+<p>Load measurement tools:</p>
+<ul class="list">
+<li>sar (sysstat package), top, nmon</li>
+</ul>
+<p>Information:</p>
+<ul class="list">
+<li>No of CPUs: 1</li>
+</ul>
+<p>Readings:</p>
+<ul class="list">
+<li><p>Sample 1 (snapshot, average load):</p>
+<ul class="list">
+<li>Average load sample 1: 0.9-1.0</li>
+<li>Average draw: 5.1V, 0.35A = 1.785W (extrapolated to 1 day = 42.84Wh)</li>
+</ul>
+</li>
+<li><p>Sample 2 (duration, day 1 (Wednesday 3pm)): 7800 mAh = 7.8 Ah. At 5.1V x 7.8 = 39.78Wh. Difference to average: -3.06Wh</p>
+</li>
+<li><p>Sample 3 (duration, day 2 (Thursday 3pm)): 6875 mAh = 6.875 Ah.</p>
+</li>
+<li><p>Sample x (duration, day x (Saturday, 4pm)): 28900 mAh</p>
+</li>
+</ul>
+<p>Steps run:</p>
+<ul class="list">
+<li>sysstat package installed via apt</li>
+<li>powertop package installed via apt</li>
+<li>(linux-perf package installed via apt, not used)</li>
+<li>nmon installed via apt</li>
+</ul>
+<h3 id="end-users"><a class="header-link" href="#end-users"></a>End users</h3>
+<p>We identified 3 key web-based user interactions to assess, based on the services and needs identified above:</p>
+<ol class="list">
+<li>Page load of 6work.exmosis.net homepage</li>
+<li>Page load (logged in) of 6read.exmosis.net homepage</li>
+<li>Page load (logged in) of 6wall.exmosis.net homepage</li>
+</ol>
+<h2 id="review-hardware-production"><a class="header-link" href="#review-hardware-production"></a>Review: Hardware production</h2>
+<p>We are currently investigating production processes for the Raspberry Pi line.</p>
+<h2 id="review-energy-supply"><a class="header-link" href="#review-energy-supply"></a>Review: Energy supply</h2>
+<p>The maple server sits within a home network, attached to the main power supply for the home.</p>
+<p>The energy provider for this location is the company <strong><a href="https://purepla.net/">Pure Planet</a></strong>, and the tariff used is based on a commitment to 100% renewable energy. For electricity, the company employs Renewable Energy Guarantees of Origin (REGOs) to supply this.</p>
+</body>
+</html>
