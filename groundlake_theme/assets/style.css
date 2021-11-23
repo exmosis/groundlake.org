@@ -5,7 +5,7 @@ html, body {
         background:#fefefe;
   }
 
-.content-wrap p, ul, h2, h3, h4, h5, h6 {
+/* .content-wrap p, ul, h2, h3, h4, h5, h6 {
   width: 50vw;
 }
 .content-wrap p {
@@ -17,6 +17,11 @@ ul {
 h2 {
   padding-left: 24vw;
   }
+*/
+.content-wrap {
+  width: 50vw;
+  padding-left: 24vw;
+}
 
 h1 {
   margin: 0 0 0.5em 0;
@@ -145,6 +150,10 @@ body {
   font-size: 120%;
   line-height: 1.4;
   }
+
+  .focus-box {
+    width: 100% !important;
+  }
 } /* @iPad */
 
 /* iPhone
@@ -159,6 +168,12 @@ article, footer {
 article {
   padding: 0 10px;
   }
+
+.content-wrap {
+  width: 90vw;
+  padding-left: 4vw;
+}
+
 } /* @iPhone */
 
 /* Groundlake customisation
@@ -206,7 +221,8 @@ article {
 
 .focus-boxes {
   display: flex;
-  margin: 2em 24vw;
+  flex-wrap: wrap;
+  margin: 0 0 2em;
   justify-content: center;
   gap: 3%;
 }
@@ -214,7 +230,8 @@ article {
 .focus-box {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 31%;
+  margin-top: 1em;
 }
 
 .focus-box > * {
