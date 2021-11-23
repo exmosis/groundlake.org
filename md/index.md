@@ -14,9 +14,9 @@ My inbox is open. [Click here to email me](mailto:graham@groundlake.org). You ca
 
 ### Efficient
 
-Improve slow, manual processes
+Overhaul slow, manual procedures
 
-Get slow computer processes fast
+Troubleshoot and optimise slow computing processes
 
 Take the hard work out of security and backups
 
@@ -26,9 +26,9 @@ Take the hard work out of security and backups
 
 ### Sustainable
 
-Be more aware of your technical supply chain
+Find out about your technical supply chain
 
-Switch to greener energy sources
+Switch to greener suppliers and energy sources
 
 Extend the life of hardware
 
@@ -38,11 +38,11 @@ Extend the life of hardware
 
 ### Technology
 
-Discover what you really need
+Discover what you really need from technology
 
-Set out short-term  and long-term plans
+Set out short-term and long-term plans
 
-General technology chats - confusions and fears
+Or just chat about what's confusing and uncertain...
 
 </div>
 
