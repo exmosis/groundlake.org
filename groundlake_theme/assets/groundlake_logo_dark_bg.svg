@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="92.125053mm"
+   height="24.626923mm"
+   viewBox="0 0 92.125053 24.626923"
+   version="1.1"
+   id="svg485583"
+   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
+   sodipodi:docname="groundlake_logo_dark_bg.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview485585"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72159091"
+     inkscape:cx="76.913386"
+     inkscape:cy="395.65354"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="0"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs485580">
+    <filter
+       inkscape:label="Ridged Border"
+       inkscape:menu="Bevels"
+       inkscape:menu-tooltip="Ridged border with inner bevel"
+       style="color-interpolation-filters:sRGB"
+       id="filter41107-2-5"
+       x="-0.010031026"
+       y="-0.010031026"
+       width="1.0200621"
+       height="1.0200621">
+      <feMorphology
+         radius="4.3"
+         in="SourceAlpha"
+         result="result91"
+         id="feMorphology41093-43-0" />
+      <feComposite
+         operator="out"
+         in="SourceGraphic"
+         in2="result91"
+         id="feComposite41095-11-3" />
+      <feGaussianBlur
+         result="result0"
+         stdDeviation="1.2"
+         id="feGaussianBlur41097-8-9" />
+      <feDiffuseLighting
+         diffuseConstant="1"
+         id="feDiffuseLighting41101-8-3">
+        <feDistantLight
+           elevation="66"
+           azimuth="225"
+           id="feDistantLight41099-84-5" />
+      </feDiffuseLighting>
+      <feBlend
+         mode="multiply"
+         in2="SourceGraphic"
+         id="feBlend41103-2-3" />
+      <feComposite
+         operator="in"
+         in2="SourceAlpha"
+         id="feComposite41105-5-6" />
+    </filter>
+    <filter
+       y="-0.040477227"
+       height="1.0809813"
+       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:label="Dark and Glow"
+       style="color-interpolation-filters:sRGB"
+       id="filter478192"
+       x="-0.033695686"
+       width="1.0673914">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result6"
+         id="feGaussianBlur478182" />
+      <feComposite
+         result="result8"
+         in="SourceGraphic"
+         operator="atop"
+         in2="result6"
+         id="feComposite478184" />
+      <feComposite
+         result="result9"
+         operator="over"
+         in2="SourceAlpha"
+         in="result8"
+         id="feComposite478186" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
+         result="result10"
+         id="feColorMatrix478188" />
+      <feBlend
+         in="result10"
+         mode="normal"
+         in2="result6"
+         id="feBlend478190" />
+    </filter>
+    <filter
+       inkscape:label="Wrinkled Varnish"
+       inkscape:menu="Bumps"
+       inkscape:menu-tooltip="Thick glossy and translucent paint texture with high depth"
+       height="1.5549667"
+       y="-0.27748332"
+       width="1.3389648"
+       x="-0.16811445"
+       style="color-interpolation-filters:sRGB"
+       id="filter29368-5-3">
+      <feGaussianBlur
+         stdDeviation="8.7718791"
+         in="SourceGraphic"
+         result="result9"
+         id="feGaussianBlur29342-15-6" />
+      <feTurbulence
+         seed="0"
+         result="result7"
+         type="fractalNoise"
+         numOctaves="5"
+         baseFrequency="0.015"
+         id="feTurbulence29344-74-8" />
+      <feComposite
+         in2="result7"
+         result="result6"
+         operator="out"
+         in="result9"
+         id="feComposite29346-57-8" />
+      <feGaussianBlur
+         result="result11"
+         stdDeviation="2"
+         id="feGaussianBlur29348-6-1" />
+      <feDisplacementMap
+         in="result7"
+         in2="result11"
+         xChannelSelector="A"
+         yChannelSelector="G"
+         scale="100"
+         result="result4"
+         id="feDisplacementMap29350-5-6" />
+      <feComposite
+         in2="result4"
+         result="result2"
+         operator="in"
+         in="result9"
+         id="feComposite29352-5-4" />
+      <feComposite
+         result="fbSourceGraphic"
+         operator="in"
+         in2="SourceGraphic"
+         id="feComposite29354-7-8" />
+      <feBlend
+         result="fbSourceGraphic"
+         mode="multiply"
+         in2="fbSourceGraphic"
+         id="feBlend29356-77-7" />
+      <feGaussianBlur
+         result="result13"
+         stdDeviation="0.5"
+         id="feGaussianBlur29358-63-3" />
+      <feSpecularLighting
+         in="result13"
+         specularExponent="5"
+         surfaceScale="15"
+         result="result12"
+         id="feSpecularLighting29362-6-5">
+        <feDistantLight
+           elevation="35"
+           azimuth="225"
+           id="feDistantLight29360-6-2" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphic"
+         in="result12"
+         result="result2"
+         operator="in"
+         id="feComposite29364-18-3" />
+      <feComposite
+         in="fbSourceGraphic"
+         result="result4"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         in2="result2"
+         id="feComposite29366-8-1"
+         k1="0"
+         k4="0" />
+    </filter>
+    <rect
+       x="578.02539"
+       y="251.90401"
+       width="1230.2076"
+       height="322.19223"
+       id="rect116936-9-2" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-57.662556,-14.498161)">
+    <g
+       id="g484694"
+       transform="matrix(0.31643655,0,0,0.31643655,31.646125,12.092082)"
+       inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/logo_dark_bg.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.996259;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1"
+         id="rect31-7-5-9"
+         width="72.065025"
+         height="72.065025"
+         x="85.097366"
+         y="10.484076"
+         ry="1.9058852" />
+      <path
+         id="rect31-4-3-6"
+         style="fill:#bebebe;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.26772;stroke-linejoin:round;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter41107-2-5)"
+         d="m 192.49609,177.88086 c -8.09604,0 -14.61523,6.51723 -14.61523,14.61328 v 370.91797 c 0,8.09605 6.51919,14.61328 14.61523,14.61328 h 370.91602 c 8.09605,0 14.61328,-6.51723 14.61328,-14.61328 V 192.49414 c 0,-8.09605 -6.51723,-14.61328 -14.61328,-14.61328 z m 6.47461,11.09375 h 357.9668 c 5.53766,0 9.99609,4.45648 9.99609,9.99414 V 556.9375 c 0,5.53766 -4.45843,9.99609 -9.99609,9.99609 H 198.9707 c -5.53766,0 -9.99609,-4.45843 -9.99609,-9.99609 V 198.96875 c 0,-5.53766 4.45843,-9.99414 9.99609,-9.99414 z"
+         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
+         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="opacity:0.799773;fill:#63b643;fill-opacity:1;stroke:#555555;stroke-width:1.30944;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter478192)"
+         d="m 190.20472,471.31576 v -94.10158 l 2.37355,-5.88628 c 10.68142,-26.48949 26.4027,-57.044 39.10826,-76.00743 23.03502,-34.38046 43.69468,-47.74992 62.3748,-40.36451 25.50553,10.08392 55.73119,55.01429 83.23001,123.72121 15.84777,39.59629 32.16834,70.61599 48.87029,92.88536 11.34596,15.128 21.39268,24.38737 32.07972,29.56568 5.44875,2.64013 6.60569,2.93865 12.37644,3.1933 5.05142,0.22291 7.34056,-0.0159 11.08662,-1.15659 14.37685,-4.37785 30.77133,-20.44714 47.14695,-46.21177 10.46629,-16.46716 22.80213,-40.32111 32.05887,-61.99252 2.36037,-5.52598 4.41803,-10.17717 4.57257,-10.33596 0.15454,-0.15879 0.28098,40.4546 0.28098,90.25197 v 90.54068 H 377.98425 190.20472 Z"
+         id="path8522-5-1"
+         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
+         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="opacity:0.744884;mix-blend-mode:luminosity;fill:#aaaaaa;fill-opacity:0.67;fill-rule:nonzero;stroke:#aaaaaa;stroke-width:1.88976;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter29368-5-3)"
+         d="m 465.71055,502.17931 c -19.97098,-5.21461 -42.14564,-31.11238 -65.20754,-76.15583 -5.12241,-10.00485 -11.22681,-22.78344 -11.22681,-23.50152 0,-0.14395 37.47098,-0.26172 83.26884,-0.26172 h 83.26884 l -0.74187,1.83737 c -1.83364,4.54132 -15.26617,31.01505 -19.32889,38.09468 -11.8723,20.68843 -23.78042,36.76828 -34.79204,46.98057 -9.61352,8.91568 -20.2007,14.04386 -28.871,13.98443 -1.48214,-0.0101 -4.34843,-0.45025 -6.36953,-0.97798 z"
+         id="path9377-3-8"
+         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
+         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#333333;stroke-width:0.432383;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1"
+         d="m 85.09737,46.51656 c 0,0 9.01067,-24.00627 18.01937,-24.01996 9.00871,-0.0137 18.01378,24.01996 18.01378,24.01996 0,0 9.00797,24.016275 18.01441,24.016275 9.00644,0 18.01746,-24.016275 18.01746,-24.016275"
+         id="path7739-4-7"
+         sodipodi:nodetypes="czczc"
+         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:#2a7fff;stroke:#333333;stroke-width:0.432383;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1"
+         d="m 123.01138,51.021302 h 32.26958"
+         id="path9305-5-3"
+         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
+         id="text116934-8-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.333px;line-height:1.25;font-family:'Universalis ADF Std';-inkscape-font-specification:'Universalis ADF Std';white-space:pre;shape-inside:url(#rect116936-9-2);fill:#696969;fill-opacity:1"><tspan
+           x="578.02539"
+           y="439.70029"
+           id="tspan486105"><tspan
+             style="font-weight:bold;font-family:'URW Bookman';-inkscape-font-specification:'URW Bookman Bold';fill:#6a6a6a"
+             id="tspan486101"> </tspan><tspan
+             style="font-weight:bold;font-size:214.624px;-inkscape-font-specification:'Universalis ADF Std Bold';fill:#fbfbfb"
+             id="tspan486103">Groundlake</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
