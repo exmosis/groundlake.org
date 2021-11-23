@@ -161,17 +161,25 @@ article {
 
 /* Groundlake customisation
 -------------------------------------------------------- */
-.logo {
+.header {
   color: white;
   background-color: #333;
   padding: 1em;
   margin:  0 0 2em 0;
 }
 
-.logo img {
+.header img {
   display: block;
   margin: 0 auto;
   width: 80%;
   height: auto;
   max-width: fit-content;
+}
+
+.header .strapline {
+  display: block;
+  padding: 0;
+  margin: 1em auto 0;
+  width: 80%;
+  text-align: center;
 }
