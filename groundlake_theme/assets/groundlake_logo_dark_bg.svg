@@ -1,285 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="92.125053mm"
-   height="24.626923mm"
-   viewBox="0 0 92.125053 24.626923"
-   version="1.1"
-   id="svg485583"
-   inkscape:version="1.1.1 (eb90963e84, 2021-10-02)"
-   sodipodi:docname="groundlake_logo_dark_bg.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview485585"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="0.72159091"
-     inkscape:cx="76.913386"
-     inkscape:cy="395.65354"
-     inkscape:window-width="1920"
-     inkscape:window-height="1003"
-     inkscape:window-x="0"
-     inkscape:window-y="40"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <defs
-     id="defs485580">
-    <filter
-       inkscape:label="Ridged Border"
-       inkscape:menu="Bevels"
-       inkscape:menu-tooltip="Ridged border with inner bevel"
-       style="color-interpolation-filters:sRGB"
-       id="filter41107-2-5"
-       x="-0.010031026"
-       y="-0.010031026"
-       width="1.0200621"
-       height="1.0200621">
-      <feMorphology
-         radius="4.3"
-         in="SourceAlpha"
-         result="result91"
-         id="feMorphology41093-43-0" />
-      <feComposite
-         operator="out"
-         in="SourceGraphic"
-         in2="result91"
-         id="feComposite41095-11-3" />
-      <feGaussianBlur
-         result="result0"
-         stdDeviation="1.2"
-         id="feGaussianBlur41097-8-9" />
-      <feDiffuseLighting
-         diffuseConstant="1"
-         id="feDiffuseLighting41101-8-3">
-        <feDistantLight
-           elevation="66"
-           azimuth="225"
-           id="feDistantLight41099-84-5" />
-      </feDiffuseLighting>
-      <feBlend
-         mode="multiply"
-         in2="SourceGraphic"
-         id="feBlend41103-2-3" />
-      <feComposite
-         operator="in"
-         in2="SourceAlpha"
-         id="feComposite41105-5-6" />
-    </filter>
-    <filter
-       y="-0.040477227"
-       height="1.0809813"
-       inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
-       inkscape:menu="Shadows and Glows"
-       inkscape:label="Dark and Glow"
-       style="color-interpolation-filters:sRGB"
-       id="filter478192"
-       x="-0.033695686"
-       width="1.0673914">
-      <feGaussianBlur
-         stdDeviation="5"
-         result="result6"
-         id="feGaussianBlur478182" />
-      <feComposite
-         result="result8"
-         in="SourceGraphic"
-         operator="atop"
-         in2="result6"
-         id="feComposite478184" />
-      <feComposite
-         result="result9"
-         operator="over"
-         in2="SourceAlpha"
-         in="result8"
-         id="feComposite478186" />
-      <feColorMatrix
-         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "
-         result="result10"
-         id="feColorMatrix478188" />
-      <feBlend
-         in="result10"
-         mode="normal"
-         in2="result6"
-         id="feBlend478190" />
-    </filter>
-    <filter
-       inkscape:label="Wrinkled Varnish"
-       inkscape:menu="Bumps"
-       inkscape:menu-tooltip="Thick glossy and translucent paint texture with high depth"
-       height="1.5549667"
-       y="-0.27748332"
-       width="1.3389648"
-       x="-0.16811445"
-       style="color-interpolation-filters:sRGB"
-       id="filter29368-5-3">
-      <feGaussianBlur
-         stdDeviation="8.7718791"
-         in="SourceGraphic"
-         result="result9"
-         id="feGaussianBlur29342-15-6" />
-      <feTurbulence
-         seed="0"
-         result="result7"
-         type="fractalNoise"
-         numOctaves="5"
-         baseFrequency="0.015"
-         id="feTurbulence29344-74-8" />
-      <feComposite
-         in2="result7"
-         result="result6"
-         operator="out"
-         in="result9"
-         id="feComposite29346-57-8" />
-      <feGaussianBlur
-         result="result11"
-         stdDeviation="2"
-         id="feGaussianBlur29348-6-1" />
-      <feDisplacementMap
-         in="result7"
-         in2="result11"
-         xChannelSelector="A"
-         yChannelSelector="G"
-         scale="100"
-         result="result4"
-         id="feDisplacementMap29350-5-6" />
-      <feComposite
-         in2="result4"
-         result="result2"
-         operator="in"
-         in="result9"
-         id="feComposite29352-5-4" />
-      <feComposite
-         result="fbSourceGraphic"
-         operator="in"
-         in2="SourceGraphic"
-         id="feComposite29354-7-8" />
-      <feBlend
-         result="fbSourceGraphic"
-         mode="multiply"
-         in2="fbSourceGraphic"
-         id="feBlend29356-77-7" />
-      <feGaussianBlur
-         result="result13"
-         stdDeviation="0.5"
-         id="feGaussianBlur29358-63-3" />
-      <feSpecularLighting
-         in="result13"
-         specularExponent="5"
-         surfaceScale="15"
-         result="result12"
-         id="feSpecularLighting29362-6-5">
-        <feDistantLight
-           elevation="35"
-           azimuth="225"
-           id="feDistantLight29360-6-2" />
-      </feSpecularLighting>
-      <feComposite
-         in2="fbSourceGraphic"
-         in="result12"
-         result="result2"
-         operator="in"
-         id="feComposite29364-18-3" />
-      <feComposite
-         in="fbSourceGraphic"
-         result="result4"
-         operator="arithmetic"
-         k2="1"
-         k3="1"
-         in2="result2"
-         id="feComposite29366-8-1"
-         k1="0"
-         k4="0" />
-    </filter>
-    <rect
-       x="578.02539"
-       y="251.90401"
-       width="1230.2076"
-       height="322.19223"
-       id="rect116936-9-2" />
-  </defs>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-57.662556,-14.498161)">
-    <g
-       id="g484694"
-       transform="matrix(0.31643655,0,0,0.31643655,31.646125,12.092082)"
-       inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/logo_dark_bg.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
-      <rect
-         style="fill:#ffffff;fill-opacity:0.996259;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1"
-         id="rect31-7-5-9"
-         width="72.065025"
-         height="72.065025"
-         x="85.097366"
-         y="10.484076"
-         ry="1.9058852" />
-      <path
-         id="rect31-4-3-6"
-         style="fill:#bebebe;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.26772;stroke-linejoin:round;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter41107-2-5)"
-         d="m 192.49609,177.88086 c -8.09604,0 -14.61523,6.51723 -14.61523,14.61328 v 370.91797 c 0,8.09605 6.51919,14.61328 14.61523,14.61328 h 370.91602 c 8.09605,0 14.61328,-6.51723 14.61328,-14.61328 V 192.49414 c 0,-8.09605 -6.51723,-14.61328 -14.61328,-14.61328 z m 6.47461,11.09375 h 357.9668 c 5.53766,0 9.99609,4.45648 9.99609,9.99414 V 556.9375 c 0,5.53766 -4.45843,9.99609 -9.99609,9.99609 H 198.9707 c -5.53766,0 -9.99609,-4.45843 -9.99609,-9.99609 V 198.96875 c 0,-5.53766 4.45843,-9.99414 9.99609,-9.99414 z"
-         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
-         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <path
-         style="opacity:0.799773;fill:#63b643;fill-opacity:1;stroke:#555555;stroke-width:1.30944;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter478192)"
-         d="m 190.20472,471.31576 v -94.10158 l 2.37355,-5.88628 c 10.68142,-26.48949 26.4027,-57.044 39.10826,-76.00743 23.03502,-34.38046 43.69468,-47.74992 62.3748,-40.36451 25.50553,10.08392 55.73119,55.01429 83.23001,123.72121 15.84777,39.59629 32.16834,70.61599 48.87029,92.88536 11.34596,15.128 21.39268,24.38737 32.07972,29.56568 5.44875,2.64013 6.60569,2.93865 12.37644,3.1933 5.05142,0.22291 7.34056,-0.0159 11.08662,-1.15659 14.37685,-4.37785 30.77133,-20.44714 47.14695,-46.21177 10.46629,-16.46716 22.80213,-40.32111 32.05887,-61.99252 2.36037,-5.52598 4.41803,-10.17717 4.57257,-10.33596 0.15454,-0.15879 0.28098,40.4546 0.28098,90.25197 v 90.54068 H 377.98425 190.20472 Z"
-         id="path8522-5-1"
-         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
-         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <path
-         style="opacity:0.744884;mix-blend-mode:luminosity;fill:#aaaaaa;fill-opacity:0.67;fill-rule:nonzero;stroke:#aaaaaa;stroke-width:1.88976;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter29368-5-3)"
-         d="m 465.71055,502.17931 c -19.97098,-5.21461 -42.14564,-31.11238 -65.20754,-76.15583 -5.12241,-10.00485 -11.22681,-22.78344 -11.22681,-23.50152 0,-0.14395 37.47098,-0.26172 83.26884,-0.26172 h 83.26884 l -0.74187,1.83737 c -1.83364,4.54132 -15.26617,31.01505 -19.32889,38.09468 -11.8723,20.68843 -23.78042,36.76828 -34.79204,46.98057 -9.61352,8.91568 -20.2007,14.04386 -28.871,13.98443 -1.48214,-0.0101 -4.34843,-0.45025 -6.36953,-0.97798 z"
-         id="path9377-3-8"
-         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
-         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <path
-         style="fill:none;stroke:#333333;stroke-width:0.432383;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1"
-         d="m 85.09737,46.51656 c 0,0 9.01067,-24.00627 18.01937,-24.01996 9.00871,-0.0137 18.01378,24.01996 18.01378,24.01996 0,0 9.00797,24.016275 18.01441,24.016275 9.00644,0 18.01746,-24.016275 18.01746,-24.016275"
-         id="path7739-4-7"
-         sodipodi:nodetypes="czczc"
-         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <path
-         style="fill:#2a7fff;stroke:#333333;stroke-width:0.432383;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.66667;stroke-dasharray:none;stroke-opacity:1"
-         d="m 123.01138,51.021302 h 32.26958"
-         id="path9305-5-3"
-         inkscape:export-filename="/home/graham/syncthing/notebooks/groundlake/branding/groundlake_logo_2.png"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <text
-         xml:space="preserve"
-         transform="matrix(0.19066896,0,0,0.19066896,49.065856,-25.54737)"
-         id="text116934-8-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.333px;line-height:1.25;font-family:'Universalis ADF Std';-inkscape-font-specification:'Universalis ADF Std';white-space:pre;shape-inside:url(#rect116936-9-2);fill:#696969;fill-opacity:1"><tspan
-           x="578.02539"
-           y="439.70029"
-           id="tspan486105"><tspan
-             style="font-weight:bold;font-family:'URW Bookman';-inkscape-font-specification:'URW Bookman Bold';fill:#6a6a6a"
-             id="tspan486101"> </tspan><tspan
-             style="font-weight:bold;font-size:214.624px;-inkscape-font-specification:'Universalis ADF Std Bold';fill:#fbfbfb"
-             id="tspan486103">Groundlake</tspan></tspan></text>
-    </g>
+<svg width="291.13mm" height="77.826mm" version="1.1" viewBox="0 0 291.13 77.826" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter41107-2-5-6" x="-.010031" y="-.010031" width="1.0201" height="1.0201" color-interpolation-filters="sRGB">
+   <feMorphology in="SourceAlpha" radius="4.3" result="result91"/>
+   <feComposite in="SourceGraphic" in2="result91" operator="out"/>
+   <feGaussianBlur result="result0" stdDeviation="1.2"/>
+   <feDiffuseLighting>
+    <feDistantLight azimuth="225" elevation="66"/>
+   </feDiffuseLighting>
+   <feBlend in2="SourceGraphic" mode="multiply"/>
+   <feComposite in2="SourceAlpha" operator="in"/>
+  </filter>
+  <filter id="filter478192-1" x="-.033696" y="-.040477" width="1.0674" height="1.081" color-interpolation-filters="sRGB">
+   <feGaussianBlur result="result6" stdDeviation="5"/>
+   <feComposite in="SourceGraphic" in2="result6" operator="atop" result="result8"/>
+   <feComposite in="result8" in2="SourceAlpha" result="result9"/>
+   <feColorMatrix result="result10" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 "/>
+   <feBlend in="result10" in2="result6"/>
+  </filter>
+  <filter id="filter29368-5-3-7" x="-.16811" y="-.27748" width="1.339" height="1.555" color-interpolation-filters="sRGB">
+   <feGaussianBlur in="SourceGraphic" result="result9" stdDeviation="8.7718791"/>
+   <feTurbulence baseFrequency="0.015" numOctaves="5" result="result7" type="fractalNoise"/>
+   <feComposite in="result9" in2="result7" operator="out" result="result6"/>
+   <feGaussianBlur result="result11" stdDeviation="2"/>
+   <feDisplacementMap in="result7" in2="result11" result="result4" scale="100" yChannelSelector="G"/>
+   <feComposite in="result9" in2="result4" operator="in" result="result2"/>
+   <feComposite in2="SourceGraphic" operator="in" result="fbSourceGraphic"/>
+   <feBlend in2="fbSourceGraphic" mode="multiply" result="fbSourceGraphic"/>
+   <feGaussianBlur result="result13" stdDeviation="0.5"/>
+   <feSpecularLighting in="result13" result="result12" specularExponent="5" surfaceScale="15">
+    <feDistantLight azimuth="225" elevation="35"/>
+   </feSpecularLighting>
+   <feComposite in="result12" in2="fbSourceGraphic" operator="in" result="result2"/>
+   <feComposite in="fbSourceGraphic" in2="result2" k2="1" k3="1" operator="arithmetic" result="result4"/>
+  </filter>
+ </defs>
+ <g transform="translate(195.8 -141.85)">
+  <rect x="-192.92" y="144.73" width="72.065" height="72.065" ry="1.9059" fill="#fff" fill-opacity=".99626" fill-rule="evenodd" stroke-miterlimit="2.6667" stroke-width="0"/>
+  <g>
+   <path transform="matrix(.19067 0 0 .19067 -228.95 108.7)" d="m192.5 177.88c-8.096 0-14.615 6.5172-14.615 14.613v370.92c0 8.096 6.5192 14.613 14.615 14.613h370.92c8.096 0 14.613-6.5172 14.613-14.613v-370.92c0-8.096-6.5172-14.613-14.613-14.613zm6.4746 11.094h357.97c5.5377 0 9.9961 4.4565 9.9961 9.9941v357.97c0 5.5377-4.4584 9.9961-9.9961 9.9961h-357.97c-5.5377 0-9.9961-4.4584-9.9961-9.9961v-357.97c0-5.5377 4.4584-9.9941 9.9961-9.9941z" fill="#bebebe" fill-rule="evenodd" filter="url(#filter41107-2-5-6)" stroke="#000" stroke-linejoin="round" stroke-miterlimit="2.6667" stroke-width="2.2677"/>
+   <path transform="matrix(.19067 0 0 .19067 -228.95 108.7)" d="m190.2 471.32v-94.102l2.3736-5.8863c10.681-26.489 26.403-57.044 39.108-76.007 23.035-34.38 43.695-47.75 62.375-40.365 25.506 10.084 55.731 55.014 83.23 123.72 15.848 39.596 32.168 70.616 48.87 92.885 11.346 15.128 21.393 24.387 32.08 29.566 5.4488 2.6401 6.6057 2.9386 12.376 3.1933 5.0514 0.22291 7.3406-0.0159 11.087-1.1566 14.377-4.3778 30.771-20.447 47.147-46.212 10.466-16.467 22.802-40.321 32.059-61.993 2.3604-5.526 4.418-10.177 4.5726-10.336s0.28098 40.455 0.28098 90.252v90.541h-375.56z" fill="#63b643" filter="url(#filter478192-1)" opacity=".79977" stroke="#555" stroke-linejoin="round" stroke-width="1.3094"/>
+   <g>
+    <path transform="matrix(.19067 0 0 .19067 -228.95 108.7)" d="m465.71 502.18c-19.971-5.2146-42.146-31.112-65.208-76.156-5.1224-10.005-11.227-22.783-11.227-23.502 0-0.14395 37.471-0.26172 83.269-0.26172h83.269l-0.74187 1.8374c-1.8336 4.5413-15.266 31.015-19.329 38.095-11.872 20.688-23.78 36.768-34.792 46.981-9.6135 8.9157-20.201 14.044-28.871 13.984-1.4821-0.0101-4.3484-0.45025-6.3695-0.97798z" fill="#aaa" fill-opacity=".67" filter="url(#filter29368-5-3-7)" opacity=".74488" stroke="#aaa" stroke-width="1.8898" style="mix-blend-mode:luminosity"/>
+    <path d="m-192.92 180.77s9.0107-24.006 18.019-24.02c9.0087-0.0137 18.014 24.02 18.014 24.02s9.008 24.016 18.014 24.016 18.017-24.016 18.017-24.016" fill="none" stroke="#333" stroke-miterlimit="2.6667" stroke-width=".43238"/>
+    <path d="m-155.01 185.27h32.27" fill="#2a7fff" stroke="#333" stroke-miterlimit="2.6667" stroke-width=".43238"/>
+   </g>
   </g>
+  <g transform="matrix(.19067 0 0 .19067 -228.95 108.7)" fill="#fbfbfb" style="shape-inside:url(#rect116936-9-2-1);white-space:pre" aria-label=" Groundlake">
+   <path d="m729.81 413.52c-6.4387 5.5802-14.594 7.7265-25.755 7.7265-28.545 0-43.139-19.102-43.139-56.446 0-35.198 15.024-52.368 43.139-52.368 13.307 0 25.54 3.6486 36.915 10.302l10.087-19.96c-13.736-10.302-30.477-15.668-48.29-15.668-43.783 0-70.611 28.33-70.611 77.694 0 49.793 26.399 77.479 70.611 77.479 20.389 0 37.988-6.4387 53.012-21.033v-62.67h-54.085v22.106h28.116z"/>
+   <path d="m839.27 368.45 7.9411-20.389c-5.5802-4.9364-13.736-6.6534-16.526-6.6534-13.092 0-21.677 4.9364-27.257 15.668v-13.521h-23.394v96.152h23.394v-49.578c0.42925-15.668 7.7265-25.111 22.536-25.111 3.8632 0 9.4435 1.5024 13.307 3.434z"/>
+   <path d="m903.44 341.4c-28.545 0-51.724 22.321-51.724 50.651 0 28.116 23.179 50.007 51.724 50.007 28.33 0 51.081-21.892 51.081-50.222s-22.75-50.437-51.081-50.437zm0.21463 21.892c13.736 0 24.896 13.521 24.896 28.76 0 15.453-11.16 28.116-24.896 28.116-13.951 0-25.111-12.663-25.111-28.116 0-15.238 11.16-28.76 25.111-28.76z"/>
+   <path d="m977.49 400.21c0 27.901 20.389 41.852 45.071 41.852h1.0731c25.97 0 43.139-15.882 43.139-41.852v-56.661h-26.184v53.227c-0.2146 15.453-5.3656 22.321-18.028 22.321-11.16 0-19.316-7.2972-19.316-19.531v-56.017h-25.755z"/>
+   <path d="m1184.2 383.47c0-27.901-13.521-42.066-38.418-42.066-11.59 0-19.96 5.151-26.613 15.668v-13.092h-24.038v95.722h24.038v-52.798c0.4293-13.307 8.585-21.892 23.179-21.892 10.517 0.21463 15.453 6.6533 15.453 18.887v55.802h26.399z"/>
+   <path d="m1279.7 356.64c-5.5802-11.375-14.594-15.238-26.399-15.238h-0.4293c-23.823 0-44.642 17.599-44.856 47.647 0.2146 34.125 18.672 53.012 45.286 53.012 12.448 0 21.033-5.3656 26.399-15.668v13.307h23.609v-160.97h-23.609zm-43.139 32.408c0-16.526 7.9411-24.038 20.175-24.038 14.38 0 22.965 8.3703 22.965 25.97 0 17.385-8.585 28.116-22.965 28.116h-0.6438c-13.736 0-19.531-12.877-19.531-30.047z"/>
+   <path d="m1332.9 278.73v160.97h24.038v-160.97z"/>
+   <path d="m1453.5 356.43c-5.5802-10.517-14.594-15.024-26.399-15.024-26.828 0-45.286 20.389-45.286 50.437 0 30.262 18.672 50.007 45.286 50.007 12.448 0 21.033-4.7217 26.399-14.38v12.234h23.609v-96.152h-23.609zm-43.139 35.413c0-17.17 7.9411-26.828 20.175-26.828 14.38 0 22.965 10.087 22.965 26.828 0 16.955-8.5849 27.257-22.965 27.257-12.878 0-20.175-10.517-20.175-27.257z"/>
+   <path d="m1506.7 278.73v160.97h23.394v-42.925l42.496 42.925h28.545l-52.154-52.368 50.007-43.783h-28.116l-40.778 34.984v-99.8z"/>
+   <path d="m1653.6 341.4c-28.545 0-50.222 22.321-50.222 50.651 0 28.116 22.75 50.007 51.295 50.007 18.243-0.21462 34.769-7.7265 43.998-21.248l-15.238-12.663c-7.0826 7.9411-16.097 12.663-27.686 12.663h-0.8585c-14.809 0-26.828-11.804-26.828-25.111h72.758v-8.7996c0-28.116-18.887-45.5-46.144-45.5zm22.965 35.842h-46.359c1.717-5.7948 12.663-13.951 23.609-13.951 10.946 0 20.604 3.6486 22.75 13.951z"/>
+  </g>
+ </g>
 </svg>
